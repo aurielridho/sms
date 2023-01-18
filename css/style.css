@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* LOGIN AND REGIST FORM */
+/* REGISTER FORM */
+.container-regist{
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 10px 20px black;
+}
+
+.gender-title{
+    position: relative;
+    text-align: left;
+    height: 45px;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 50px;
+}
+
+.city-title{
+    position: relative;
+    text-align: left;
+    height: 45px;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.city-title select{
+    width: 100%;
+    padding: 5px;
+}
+
+.container-regist a{
+    color: #38abab;
+}
+
+/* LOGIN FORM */
+.container-login{
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 10px 20px black;
+}
+
+.login1{
+    padding: 10px;
+}
+
+.login1 #input{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    color: white;
+    background-color: #38abab;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-login a{
+    color: #38abab;
+}
+
+.login-text{
+    position: relative;
+    text-align: center;
+    height: 45px;
+    width: 50%;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.itext{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 0 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    outline: 0;
+}
+
+.text-label{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    padding: 0 4px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.itext:focus + .text-label{
+    top: 30%;
+    left: 50%;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #38abab;
+}
+
+.itext:not(:placeholder-shown)+ .text-label {
+    top: 30%;
+    left: 50%;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #38abab;
+}
+
+::placeholder{
+    color: transparent;
+}
+
+
+/* FOOTER */
+.content-ftr{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px inset grey;
+}
+
+.content-ftr i{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.content-ftr p{
+    padding: 10px;
+}
+
+.content-ftr button{
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+}
